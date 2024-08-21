@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://127.0.0.1:5500/EC_Project%20Yogurt.html -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greek Yogurt Parfaits 😋</title>
+    <style>
+      body {
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(137, 210, 253) 0%,
+          rgb(255, 241, 188) 90%
+        );
+      }
+
+      h1 {
+        text-align: center;
+        color: darkblue;
+      }
+      h2 {
+        text-align: center;
+        border: 2px solid darkblue;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 4px;
+        margin: 10px 500px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-height: 400%;
+        max-width: 400%;
+        border-radius: 10px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 13px;
+        margin: 0 auto;
+        width: 300px;
+        text-align: left;
+      }
+      .learnMore {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 100px;
+        text-align: center;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        background: darkblue;
+        color: white;
+        font-size: 14px;
+        padding: 15px 20px;
+        border-radius: 6px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.4;
+        cursor: pointer;
+      }
+      .footer {
+        text-align: center;
+      }
+      .content {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="./EC Project_Greek Yogurt Parfaits 😋_files/logo-shecodes-3dfa60aeab8ef361842da5a2b6d46db3af1b7afafefee3dde0a9846389de754b.png"
+      width="150"
+    />
+
+    <div class="content"></div>
+    <h1>I Love Yogurt 😋</h1>
+    <h2>Especially Greek Yogurt!</h2>
+    <img
+      src="./EC Project_Greek Yogurt Parfaits 😋_files/greek-yogurt-parfait-recipe-1-600x600.jpg"
+      width="350"
+    />
+    <p>
+      A homemade parfait with Greek yogurt is a wonderful way to control the
+      amount of sugar and allows for a nice serving of protein. Plus, fresh
+      fruit provide dietary fiber and vitamins that help you to feel your best.
+      And a bit of honey as a natural sweetener adds a fresh flavor and will
+      satisfy your sweet tooth.
+      <br />
+    </p>
+    <p class="learnMore">
+      <a href="https://thewoodenskillet.com/greek-yogurt-parfait/">
+        Learn More on The Wooden Skillet
+      </a>
+    </p>
+    <button class="buy-button">👉 Buy Greek Yogurt Parfaits</button>
+    <!-- Code injected by live-server -->
+    <script>
+      // <![CDATA[  <-- For SVG support
+      if ("WebSocket" in window) {
+        (function () {
+          function refreshCSS() {
+            var sheets = [].slice.call(document.getElementsByTagName("link"));
+            var head = document.getElementsByTagName("head")[0];
+            for (var i = 0; i < sheets.length; ++i) {
+              var elem = sheets[i];
+              var parent = elem.parentElement || head;
+              parent.removeChild(elem);
+              var rel = elem.rel;
+              if (
+                (elem.href && typeof rel != "string") ||
+                rel.length == 0 ||
+                rel.toLowerCase() == "stylesheet"
+              ) {
+                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                elem.href =
+                  url +
+                  (url.indexOf("?") >= 0 ? "&" : "?") +
+                  "_cacheOverride=" +
+                  new Date().valueOf();
+              }
+              parent.appendChild(elem);
+            }
+          }
+          var protocol =
+            window.location.protocol === "http:" ? "ws://" : "wss://";
+          var address =
+            protocol + window.location.host + window.location.pathname + "/ws";
+          var socket = new WebSocket(address);
+          socket.onmessage = function (msg) {
+            if (msg.data == "reload") window.location.reload();
+            else if (msg.data == "refreshcss") refreshCSS();
+          };
+          if (
+            sessionStorage &&
+            !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+          ) {
+            console.log("Live reload enabled.");
+            sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+          }
+        })();
+      } else {
+        console.error(
+          "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+        );
+      }
+      // ]]>
+    </script>
+
+    <br />
+    <br />
+    <p class="footer">This page was built by Ebony Cruz. 💻</p>
+    <script>
+      function buyYogurt() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let fruit = prompt("What is your favorite fruit emoji?");
+
+        alert(
+          " Thank you " +
+            name +
+            "! We'll be in touch by email, meanwhile have a lot of yougurt!" +
+            fruit
+        );
+      }
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buyYogurt);
+    </script>
+    <!-- Code injected-->
+  </body>
+</html>
